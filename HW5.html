@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href = "HW5.css"/>
+    <script src="HW5.js"></script>
+  <body>
+    <div id="container">
+      <div id="menuBar">
+          <div class="dropdown">
+            <button class="drop-button">File</button>
+              <div class="drop-content">
+                <button class="dropItem" id="open">Open</button>
+                <button class="dropItem" id="close">Close</button>
+                <button class="dropItem" id="exit">Exit</button>
+              </div>
+          </div>
+          <div class="dropdown">
+            <button class="drop-button">Help</button>
+              <div class="drop-content">
+                  <button class="dropItem" id="about">About</button>
+              </div>
+          </div>
+      </div>
+      <div id="sliderContainer">
+        <input type="range" min="0" max="100" value="0" step="25" list="steplist" id="timeSlider">
+        <datalist id="steplist">
+          <option>0</option>
+          <option>25</option>
+          <option>50</option>
+          <option>75</option>
+          <option>100</option>
+        </datalist>
+      </div>
+      <div id="lightsContainer">
+      </div>
+    </div>
+  </body>
+</html>
